@@ -32,17 +32,17 @@ def draw_koch_curve(order, size=300):
 
 
 def main():
-    level = None
+    number = None
 
     while True:
-        value = input("Enter recursion level:\n>>> ")
+        val = input("Enter recursion number:>>> ")
         try:
-            level = int(value)
+            number = int(val)
             break
         except ValueError:
-            print(f"Invalid value: {value}. The value must be an integer.")
+            print(f"Invalid value: {val}. The value must be an integer.")
 
-    draw_koch_curve(level)
+    draw_koch_curve(number)
 
 
 if __name__ == "__main__":
